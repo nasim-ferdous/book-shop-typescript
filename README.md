@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 Book Shop - Full Stack CRUD Application
 
-## Getting Started
+A modern, responsive Book Shop management system built with **Next.js 15**, **TypeScript**, and **MongoDB**. This project demonstrates full CRUD (Create, Read, Update, Delete) operations using the native MongoDB driver and a sleek UI powered by **DaisyUI**.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Dynamic Hero Section**: Engaging landing page with a modern aesthetic.
+- **Book Management**:
+  - **Create**: Add new books via a dedicated form.
+  - **Read**: View all books as responsive cards with a search filter.
+  - **Update**: Edit book details through an interactive modal.
+  - **Delete**: Remove books with a secure confirmation dialog (SweetAlert2).
+- **Search**: Real-time client-side filtering by book title.
+- **Responsive Design**: Optimized for mobile, tablet, and desktop views.
+- **Type Safety**: Built entirely with TypeScript for robust code.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Database**: [MongoDB](https://www.mongodb.com/) (Native Driver)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) & [DaisyUI](https://daisyui.com/)
+- **Notifications**: [SweetAlert2](https://sweetalert2.github.io/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📋 Prerequisites
 
-## Learn More
+Before you begin, ensure you have the following installed:
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js 18.x or later
+- A MongoDB Atlas account or a local MongoDB instance
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚙️ Installation & Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository**:
+   ```bash
+   git clone [https://github.com/nasim-ferdous/book-shop-typescript.git](https://github.com/nasim-ferdous/book-shop-typescript.git)
+   cd book-shop
+   ```
+2. Install dependencies:
 
-## Deploy on Vercel
+   npm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Environment Variables:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Create a .env.local file in the root directory and add your MongoDB URI:
+
+MONGODB_URI=your_mongodb_connection_string_here
+
+4. Run the development server:
+
+   npm run dev
+
+Open http://localhost:3000 with your browser to see the result.
+
+📂 Project Structure
+
+- /src/app/api/books - Main API route for GET and POST.
+
+- /src/app/api/books/[id] - Dynamic API routes for PUT and DELETE.
+
+- /src/components - Reusable UI components (Navbar, AllBooks, etc.).
+
+- /src/lib/mongodb.ts - Shared MongoDB client connection logic.
+
+- /src/types - TypeScript interfaces and definitions.
+
+📝 License
+
+Distributed under the MIT License. See LICENSE for more information.
