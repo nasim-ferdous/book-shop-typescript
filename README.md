@@ -2,6 +2,10 @@
 
 A modern, responsive Book Shop management system built with **Next.js 15**, **TypeScript**, and **MongoDB**. This project demonstrates full CRUD (Create, Read, Update, Delete) operations using the native MongoDB driver and a sleek UI powered by **DaisyUI**.
 
+## 🔗 Live Demo
+
+Check out the live application here: [https://book-shop-rosy-iota.vercel.app/](https://book-shop-rosy-iota.vercel.app/)
+
 ## 🚀 Features
 
 - **Dynamic Hero Section**: Engaging landing page with a modern aesthetic.
